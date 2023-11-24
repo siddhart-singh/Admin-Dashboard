@@ -151,4 +151,17 @@
 
 .card div {
   justify-self: end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.announcement-box, .trending-box {
+    background-color: white;
+    margin: 1rem 0;
 }
