@@ -1,7 +1,13 @@
+:root {
+    --bg-clr: rgb(236, 227, 206);
+    --p-clr: rgb(115, 144, 114);
+    --s-clr: rgb(79, 111, 82);
+    --t-clr: rgb(58, 77, 57);
+}
 .grid {
     display: grid;
     grid-template-rows:  min(150px,100%) 1fr;
-    grid-template-columns: min(200px,100%) 1fr;
+    grid-template-columns: min(250px,100%) 1fr;
     grid-template-areas:  
         "sidebar    header"
         "sidebar    main";
@@ -15,8 +21,44 @@
 }
 
 .sidebar {
-    background-color: tomato;
     grid-area: sidebar;
+    background-color: var(--bg-clr);
+    padding: 1rem;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 3rem;
+}
+
+.sidebar div {
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.sidebar a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.rem;
+}
+
+.sidebar a svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.logo a svg {
+    width: 50px;
+    height: 50px;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .main {
