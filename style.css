@@ -3,6 +3,7 @@
   --p-clr: rgb(115, 144, 114);
   --s-clr: rgb(79, 111, 82);
   --t-clr: rgb(58, 77, 57);
+  overflow-x: hidden;
 }
 .grid {
   display: grid;
@@ -172,4 +173,15 @@
 .trending-box {
   background-color: white;
   margin: 1rem 0;
+  padding: 1rem;
+}
+
+.announcement-box div, .trending-box div {
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.announcement-box div:last-child, .trending-box div:last-child {
+    /* padding-bottom: 0; */
+    border-bottom: none;
 }
