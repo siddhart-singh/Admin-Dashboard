@@ -18,6 +18,65 @@
 .header {
     background-color: aquamarine;
     grid-area: header;
+    padding:1.5rem 2rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
+    /* align-content: space-between; */
+}
+
+.header svg {
+    height:20px;
+    width: 20px;
+}
+
+.header .search form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.header .search input[type="search"] {
+    flex: 1;
+    max-width: 75%;
+
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+
+.header .user_image {
+    width: 35px;
+    height: 35px;
+    background-image: url(./images/user_image.jpeg);
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.header .account {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .greeting {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .greeting .user_image {
+    width: 50px;
+    height: 50px;
 }
 
 .sidebar {
@@ -58,7 +117,9 @@
 
 .logo a {
     font-size: 2rem;
-    font-weight: bold;
+    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 11 14H9a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 10 19Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+  </svg> font-weight: bold;
 }
 
 .main {
