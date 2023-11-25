@@ -1,4 +1,9 @@
 :root {
+  --white: #ffffff;
+  --grey: #bfbfbf;
+  --dark-grey: #7f7f7f;
+  --ligh-black: #404040;
+  --black: #000000;
   overflow-x: hidden;
 }
 
@@ -19,9 +24,10 @@
 }
 
 .header {
-  background-color: var(--main-lighter);
+  /* background-color: var(--black); */
   grid-area: header;
   padding: 1.5rem 2rem;
+
 
   display: flex;
   justify-content: space-between;
@@ -46,7 +52,7 @@
 
 .header .search input[type="search"] {
   flex: 1 0 400px;
-  background-color: var(--main-light);
+  background-color: var(--grey);
   border: 1px solid black;
   border-radius: 25px;
   font-size: 1rem;
@@ -88,8 +94,8 @@
 
 .sidebar {
   grid-area: sidebar;
-  background-color: var(--main);
-  color: var(--font-lighter);
+  background-color: var(--black);
+  color: var(--white);
   padding: 2rem;
 
   display: grid;
@@ -114,9 +120,9 @@
 }
 
 
-/* .sidebar a:hover {
-  color: var(--font);
-} */
+.sidebar a:hover {
+  color: var(--dark-grey);
+}
 
 .sidebar a svg {
   width: 20px;
@@ -133,7 +139,7 @@
 }
 
 .main {
-  background-color: var(--main-light);
+  background-color: var(--grey);
   color: var(--font);
   grid-area: main;
   padding: 2rem;
@@ -149,7 +155,6 @@
 
 .main-container {
   padding: 1rem;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
   grid-template-rows: 1fr;
@@ -159,7 +164,8 @@
 .card {
   width: 350px;
   height: 200px;
-  background-color: var(--main-lighter);
+  background-color: var(--white);
+  border-radius: 10px;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -171,6 +177,7 @@
   justify-self: end;
   display: flex;
   gap: 0.5rem;
+  
   
 }
 
@@ -186,12 +193,16 @@
   background-color: white;
   margin: 1rem 0;
   padding: 1rem;
-  background-color: var(--main-lighter);
+  background-color: var(--white);
+  border-radius: 10px;
+  
 }
 
 .announcement-box div, .trending-box div {
     padding: 0.5rem;
     border-bottom: 1px solid grey;
+
+    
 }
 
 .announcement-box div:last-child, .trending-box div:last-child {
