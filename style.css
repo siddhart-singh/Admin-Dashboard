@@ -7,9 +7,8 @@
   overflow-x: hidden;
 }
 
-
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .grid {
@@ -27,7 +26,6 @@
   /* background-color: var(--black); */
   grid-area: header;
   padding: 1.5rem 2rem;
-
 
   display: flex;
   justify-content: space-between;
@@ -87,10 +85,8 @@
 }
 
 .header .account .actionBtn {
-    display: flex;
-    gap: 0.5rem;
-
-
+  display: flex;
+  gap: 0.5rem;
 }
 
 .header .account .actionBtn button {
@@ -101,6 +97,7 @@
   color: var(--white);
   border-radius: 15px;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .header .account .actionBtn button:hover,
@@ -152,7 +149,6 @@
   position: relative;
 }
 
-
 .sidebar a:hover {
   color: var(--dark-grey);
 }
@@ -187,7 +183,7 @@
 }
 
 .main-container {
-  padding: 1rem;
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
   grid-template-rows: 1fr;
@@ -203,15 +199,24 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
+  gap: 0.8rem;
+}
+
+.card h2 {
+  font-size: 1.25em;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--ligh-black);
 }
 
 .card div {
   justify-self: end;
   display: flex;
   gap: 0.5rem;
-  
-  
+  font-size: 0.9rem;
 }
 
 .announcements,
@@ -224,21 +229,33 @@
 .announcement-box,
 .trending-box {
   background-color: white;
-  margin: 1rem 0;
-  padding: 1rem;
+  margin: 0.75rem  0 2rem 0 ;
+  padding: 0 1.25rem;
   background-color: var(--white);
   border-radius: 10px;
-  
 }
 
-.announcement-box div, .trending-box div {
-    padding: 0.5rem;
-    border-bottom: 1px solid grey;
-
-    
+.announcement-box div,
+.trending-box div {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid grey;
 }
 
-.announcement-box div:last-child, .trending-box div:last-child {
-    /* padding-bottom: 0; */
-    border-bottom: none;
+.announcement-box div:last-child,
+.trending-box div:last-child {
+  /* padding-bottom: 0; */
+  border-bottom: none;
+}
+
+.announcement-box div h3,
+.trending-box div h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.announcement-box div p,
+.trending-box div p {
+  font-size: 0.85rem;
+  color: var(--ligh-black);
 }
